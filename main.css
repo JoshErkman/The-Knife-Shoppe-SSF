@@ -10,18 +10,143 @@ body{
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
 }
+h1 {
+    color: black;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
 
-.contentWrapper{
+
+h2 {
+    color: purple;
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: black;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+    color: black;
+}
+
+a, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+
+.content-wrapper{
     margin: 0 auto;
     max-width: 1170px;
     padding: 0 3.0em;
 }
 
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+div.clear{
+    clear:both;
+    font-size: 1%;
+}
+
 /* HEADER */
 header {
-    padding:2.5em 0 0.5em;
+    /* height: 150px; */
+    padding: 2.5em 0 0.5em;
+    /* width: 100%; */
     margin: 0 0 2.0em;
     background: #DAD5BA;
+}
+
+header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    font-size: 7.5em;
+    letter-spacing: -0.025em;
+    margin: 0;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 3.8em;
+    color: green;
+    margin: -0.4em 0 0 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+img#logo {
+    left: 19%;
+    position: relative;
+    width: 9%;
+    height: auto;
+
+}
+
+/* SIDEBAR */
+section#sidebar {
+    width:238px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #57554A;
+    margin: 0 0 0.0em 0.0em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: black solid 5px;
+}
+
+/* MAIN SECTION */
+section #main {
+    background-color:red;
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+}
+
+section div.panel{
+    float: left;
+    position: relative;
+    width: 250px;
+    margin: 0 0.5em 2.0em 0.5em;
+    padding: 1.0em;
+    background-color:black;
+    border: black solid 1px;
+    border-radius: 0.6em;
+}
+
+section div.panel img.shop-type {
+    width: 100%;
+    height: 170px;
 }
 
 /* NAV BAR */
@@ -46,13 +171,13 @@ nav li {
 
 nav li a, nav li a:visited {
     text-decoration: none;
-    color: #DAD5BA;
+    color: #57554A;
     padding: 0.3em 0.6em;
 }
 
 nav li a:hover {
-    color: #57554A;
-    background-color: #DAD5BA;
+    color:#DAD5BA;
+    background-color: snow;
 }
 
 nav#utility-menu {
@@ -62,6 +187,7 @@ nav#utility-menu {
     height: 1.5em;
     text-align: right;
     margin: -1.5em 0 0 0;
+    padding: 0.35em;
 }
 
 nav#utility-menu li{
@@ -69,8 +195,82 @@ nav#utility-menu li{
     vertical-align: middle;
 }
 
+nav#utility-menu ul li.acctNav a, nav#utility-menu ul li.acctNav a:visited{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.5em;
+    margin: -0.4em 0 0 0;
+}
+
+/* nav#utility-menu ul li.acctNav a.active { */
+    background-color: #57554A;
+}
+
+/* nav#utility-menu ul li.acctNav a:hover { */
+    background-color: salmon;
+    color: black;
+}
+
+nav#utility-menu li a, nav#utility-menu li a:visited {
+     padding: 0;
+}
+
+nav#utility-menu li a:hover { 
+    background-color: transparent;
+}
+
+nav#utility-menu ul li input#search {
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+
+nav#utility-menu ul li.acctNav::before, nav#utility-menu ul li input#search::before {
+    content: "| ";
+    color: #FCFBE6;
+}
+
+nav ul li#searchbar{
+    float: left;
+    position: relative;
+    left: 20%;
+}
+
 /*FOOTER*/
+footer {
+    background-color: #57554A;
+    height: 25px;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+
 footer ul li::before{
     content: "| ";
     padding-right: 0.7em;
+}
+
+footer ul#menu-footer {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+footer a, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
