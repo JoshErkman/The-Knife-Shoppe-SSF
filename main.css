@@ -3,8 +3,9 @@ body{
     font-size: 67.5%;
     font-family: Tahoma, Geneva, sans-serif;
     background: url(img/map_background.jpg) no-repeat fixed top center;
+    object-fit: cover;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -59,9 +60,9 @@ hr {
 }
 
 .content-wrapper{
-    margin: 0 auto;
+    margin: 0;
     max-width: 1170px;
-    padding: 0 3.0em;
+    padding: 0;
 }
 
 .left {
@@ -81,9 +82,10 @@ div.clear{
 header {
     /* height: 150px; */
     padding: 2.5em 0 0.5em;
-    /* width: 100%; */
-    margin: 0 0 2.0em;
+    width: 100%;
+    margin: 0 0 2.0em 0;
     background: #DAD5BA;
+    border-bottom: black solid 2px;
 }
 
 header h1 {
@@ -105,10 +107,11 @@ header h2 {
 
 
 img#logo {
-    left: 19%;
+    left: 2%;
     position: relative;
-    width: 9%;
+    width: 11%;
     height: auto;
+    
 
 }
 
@@ -121,7 +124,7 @@ section#sidebar {
     background-color: #57554A;
     margin: 0 0 0.0em 0.0em;
     padding: 1.7em 0.5em 2.0em 1.7em;
-    border-left: black solid 5px;
+    border-right: black solid 5px;
 }
 
 /* MAIN SECTION */
@@ -183,7 +186,7 @@ nav li a, nav li a:visited {
 }
 
 nav li a:hover {
-    color:#DAD5BA;
+    color:#57554A;
     background-color: snow;
 }
 
@@ -206,17 +209,17 @@ nav#utility-menu ul li.acctNav a, nav#utility-menu ul li.acctNav a:visited{
     color: white;
     text-decoration: none;
     display: inline-block;
-    height: 1.3em;
+    height: 1.2em;
     padding: 0.5em;
     margin: -0.4em 0 0 0;
 }
 
-/* nav#utility-menu ul li.acctNav a.active { */
+nav#utility-menu ul li.acctNav a.active {
     background-color: #57554A;
 }
 
-/* nav#utility-menu ul li.acctNav a:hover { */
-    background-color: salmon;
+nav#utility-menu ul li.acctNav a:hover {
+    background-color: #DAD5BA;
     color: black;
 }
 
