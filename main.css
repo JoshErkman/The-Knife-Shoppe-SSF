@@ -60,7 +60,7 @@ hr {
 }
 
 .content-wrapper{
-    margin: 0;
+    margin: 0 auto;
     max-width: 1170px;
     padding: 0;
 }
@@ -161,7 +161,7 @@ section div.panel p.panel-text {
 nav {
     color: red;
     font-size: 1.7em;
-    width: 100%;
+    width: auto;
     letter-spacing: 0.04em;
     /* padding: 1.0em 1.0em 0.5em; */
     /* margin: 1.0em 0 ; */
